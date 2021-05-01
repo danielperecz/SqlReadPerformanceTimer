@@ -9,3 +9,5 @@ A mini console app for testing different ways of reading and storing data from S
 | SqlDataReader  | -> | HashSet(Of Integer)              | 00:00:00.0365661 |
 
 Something interesting regarding the `ToString()` method is that it seems to be very slow because when I used a `Dictionary(Of Integer, String())` and had to convert each object into a string, it added approximately an extra 10% of execution time.
+
+The DataTable's column count, and the Dictionary's Object() array length were identical during the test.
